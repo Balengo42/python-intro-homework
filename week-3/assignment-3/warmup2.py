@@ -1,4 +1,4 @@
-age= int(input("What is your age?"))
+age= int(input("Enter your age:"))
 if age >= 65:
     group = "Senior"
 elif age >= 18:
@@ -8,5 +8,4 @@ elif age >= 13:
 else:
     group = "Child"
 
-print("Enter your age:", age)
 print("You are a", group)
