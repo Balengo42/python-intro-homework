@@ -1,23 +1,18 @@
-number= int(input("Enter a number: "))
+number = int(input("Enter a number: "))
+
+# Sign block
 if number == 0:
-    parity="even"
-    sign="zero"
+    sign = "zero"
+elif number < 0:
+    sign = "negative"
+else:
+    sign = "positive"
 
-elif number % 2 == 0:
-    parity="even"
-    if number < 0:
-        sign="negative"
-    else:
-        sign="positive"
+# Parity block
+if number % 2 == 0:
+    parity = "even"
+else:
+    parity = "odd"
 
-elif number % 2 != 0:
-    parity="odd"
-    if number < 0:
-        sign="negative"
-    else:
-        sign="positive"
-    
-print("Enter a number: ", number)
 print(f"{number} is {sign}.")
 print(f"{number} is {parity}.")
-
