@@ -37,6 +37,6 @@ for student in students:
 
 
 print(f"Top scorer:       {top_name} ({top_score})")
-print(f"Class average:    {class_average:.2f}")
+print(f"Class average:    {class_average:.1f}")
 print(f"Subjects offered: {unique_subjects}")
 print(f"High scorers:     {high_scorers}")
