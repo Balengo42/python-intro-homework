@@ -1,14 +1,14 @@
 numbers = [42, 17, 83, 5, 61, 29, 74, 8, 55, 93, 31, 66, 14, 47, 78, 3, 59, 22, 86, 40]
 
 while numbers:
-    print("\nMenu:")
+    print("\n=== Number Cruncher ===:")
     print("1. Find minimum")
     print("2. Find maximum")
     print("3. Search")
     print("4. Sort")
     print("5. Quit")
 
-    choice = input("Enter your choice (1-5): ")
+    choice = input("Choose an option (1-5): ")
 
 
     if choice == '1':
