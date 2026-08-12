@@ -4,4 +4,4 @@ def greet(name, Greeting="Hello"):
 
 greet("Alex")
 greet("Alex", "Good Night")
-greet("Bob", Greeting= "Hello")
+greet("Alex", Greeting= "Hello")
