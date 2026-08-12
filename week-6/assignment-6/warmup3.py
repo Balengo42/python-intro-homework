@@ -2,10 +2,10 @@ def adding(numb):
     total = numb + 10 
     print(total)
 
-adding()
+adding(5)
 
 # print (total)
-#NameError: name 'total' is not defined
+# NameError: name 'total' is not defined
 
 
 def adding_fix(numb):
