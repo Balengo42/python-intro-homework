@@ -1,7 +1,7 @@
 
-def greet_user(name, Greeting="Hello"):
+def greet(name, Greeting="Hello"):
     print(f" {Greeting}, {name}!")
 
-greet_user("Bob")
-greet_user("Bob", "Good Night")
-greet_user("Bob", Greeting= "Hello")
+greet("Alex")
+greet("Alex", "Good Night")
+greet("Bob", Greeting= "Hello")
