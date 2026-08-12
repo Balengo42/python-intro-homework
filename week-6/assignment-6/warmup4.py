@@ -9,8 +9,8 @@ def is_valid_score(score):
 score = int(input("What is you score: "))
 
 if is_valid_score(score):
-    print("Valid Score")
+    print("Valid Score.")
 else:
-    print("Invalid score - must be between - 0 and 100.")
+    print("Invalid score — must be between 0 and 100.")
 
 
