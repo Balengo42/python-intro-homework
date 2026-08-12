@@ -1,8 +1,7 @@
 def is_valid_score(score):
     
-    if score <=100 and score >=0 :
+    if score >= 0 and score <= 100:
         return True 
-    
     else:
         return False
         
