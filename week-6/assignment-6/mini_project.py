@@ -66,9 +66,9 @@ def main():
             target = int(input("Enter a number to search for: "))
             result = search(numbers, target)
             if result != -1:
-                print(f"Found {target} at index {result}.")
+                print(f"Found at index {result}.")
             else:
-                print(f"{target} was not found in the list.")
+                print("Not found.")
 
         elif choice == '4':
             sorted_list = bubble_sort(numbers)
