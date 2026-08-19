@@ -1,11 +1,6 @@
 import csv
 import os
 from datetime import datetime
-import argparse
- 
-parser = argparse.ArgumentParser(description="Generate an expense report for a given category.")
-parser.add_argument("--category", default="Food", help="Expense category to report on (default: Food)")
-args = parser.parse_args()
  
 path = os.path.join("..", "data", "expenses.csv")
  
@@ -22,17 +17,17 @@ except Exception as e:
     print(f"An error occurred while reading {path}: {e}")
     exit()
  
-matches = [r for r in reader if r["category"] == args.category]
+matches = [r for r in reader if r["category"] == "Food"]
  
 total = sum(r["amount"] for r in matches)
  
 today = datetime.now().strftime("%B %d, %Y")
-output_path = f"{args.category.lower()}_report.txt"
  
-with open(output_path, "w") as file:
-    file.write(f"{args.category} Expense Report — generated {today}\n")
+with open("food_report.txt", "w") as file:
+    file.write(f"Food Expense Report — generated {today}\n")
     for r in matches:
         file.write(f"{r['date']}: ${r['amount']:.2f}\n")
     file.write(f"Total: ${total:.2f}\n")
  
-print(f"Wrote {output_path} ({len(matches)} entries, total ${total:.2f})")
+print(f"Wrote food_report.txt ({len(matches)} entries, total ${total:.2f})")
+ 
