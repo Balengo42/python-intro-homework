@@ -1,10 +1,12 @@
 while True:
-    numerator = float(input("Enter the numerator: "))
-    denominator= float(input("Enter the denominator: "))
-    try: 
+
+    try:  
+        numerator = float(input("Enter the numerator: "))
+        denominator= float(input("Enter the denominator: "))
+
         division = (numerator/denominator)
         print (f"{numerator} ÷ {denominator} = {division}")
         break
     except ZeroDivisionError:
-        print("Cant't divide by zero - please try a non-zero denominator")
+        print("Can't divide by zero - please try a non-zero denominator.")
         continue
