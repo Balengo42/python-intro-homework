@@ -8,5 +8,5 @@ while True:
         print (f"{numerator} ÷ {denominator} = {division}")
         break
     except ZeroDivisionError:
-        print("Can't divide by zero - please try a non-zero denominator.")
+        print("Can't divide by zero — please try a non-zero denominator.")
         continue
